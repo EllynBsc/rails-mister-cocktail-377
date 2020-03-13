@@ -1,4 +1,5 @@
 class DosesController < ApplicationController
+  before_action :set_cocktail, only: [:new, :create]
   def new
     # raise
     # @cocktail = Cocktail.find(params[:cocktail_id])
